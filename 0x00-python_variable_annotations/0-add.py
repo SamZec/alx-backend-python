@@ -1,4 +1,4 @@
-#!/usr/bi/env python3
+#!/usr/bin/env python3
 """0-add.py - module for type-annotated function add"""
 
 
