@@ -1,4 +1,4 @@
-#!/usr/bin/ev python3
+#!/usr/bin/env python3
 """5-sum_list.py - module for a type-annotated function sum_list"""
 
 from typing import List
