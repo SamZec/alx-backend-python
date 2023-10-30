@@ -6,6 +6,7 @@ from parameterized import parameterized
 import unittest
 from utils import access_nested_map
 from nose.tools import assert_equal
+from typing import Mapping, Sequence, Any
 
 
 class TestAccessNestedMap(unittest.TestCase):
@@ -15,6 +16,7 @@ class TestAccessNestedMap(unittest.TestCase):
                           ({"a": {"b": 2}}, "a", {"b": 2}),
                           ({"a": {"b": 2}}, ("a", "b"), 2)
                           ])
-    def test_access_nested_map(self, obj, path, res):
+    def test_access_nested_map(self, obj: Mapping,
+                               path: Sequence, res: Any) -> Any:
         """tests access_nested_map function from utils"""
         assert_equal(access_nested_map(obj, path), res)
