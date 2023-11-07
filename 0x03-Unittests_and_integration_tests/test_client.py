@@ -19,3 +19,7 @@ class TestGithubOrgClient(unittest.TestCase):
         inst = GithubOrgClient(data)
         inst.org()
         mock.assert_called_once_with(url)
+
+
+if __name__ == '__main__':
+    unittest.main()
