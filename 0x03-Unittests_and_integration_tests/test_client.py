@@ -4,6 +4,7 @@
 
 import unittest
 from unittest.mock import patch
+from unittest import mock
 from parameterized import parameterized
 from client import GithubOrgClient
 
